@@ -17,6 +17,10 @@ h1, h2, h3 {
     font-family: 'Dosis', sans-serif;
 }
 
+div.cases {
+    max-width: 50%;
+}
+
 /* Intro Section */
 .intro {
     background-color: #FFA343;
@@ -25,7 +29,8 @@ h1, h2, h3 {
 
 /* Title Animation */
 .patterns {
-    height: 110vh;
+    height: 150vh;
+    max-height: 200vw;
     width: 100vw;
 }
 
@@ -33,10 +38,9 @@ svg text {
     font-family: 'Dosis', sans-serif;
     letter-spacing: 5px;
     stroke: #DBDF87;
-    font-size: 3.5rem;
+    font-size: 15vw;
     font-weight: 600;
-    stroke-width: 1.5;
-   
+    stroke-width: 4;
     animation: textAnimate 5s infinite alternate;
     
 }
@@ -105,7 +109,7 @@ section:nth-of-type(5) {
 /* Cross Section Configuration */
 .section-style {
     width: 100%;
-    height: 1800px;
+    height: 110vh;
     position: absolute;
     overflow: hidden;
     clip: rect(0, auto, auto, 0); 
@@ -116,6 +120,15 @@ section:nth-of-type(5) {
     position: fixed;
     overflow: hidden;
     top: 10%;
+}
+
+@media (max-width: 465px) {
+    @media (max-height: 930px) {
+        #sectionOne .section-list, #sectionTwo .section-list {
+            transform: scale(50%);
+            top: -20%;
+        }
+    }
 }
 
 .row {
@@ -199,31 +212,7 @@ section:nth-of-type(5) {
 }
 
 
-/* Small fix for tiny widths. Configured for a minimal of 320px. */
-@media (max-width: 355px) {
-    .big-heading {
-        line-height: 1.5;
-        padding: 15vh 21%;
-    }
-}
-
-@media (max-width: 767px) {
-    #sectionThree {
-        height: 900px;
-    }
-}
-
-@media (max-width: 991px) {
-    #sectionFour {
-        height: 600px;
-    }
-}
-
 @media (min-width: 576px) {
-    .section-style {
-        height: 1000px;
-    }
-
     #footer {height: 4rem;}
     .footer-items {padding-top: 1rem;}
 
@@ -232,10 +221,7 @@ section:nth-of-type(5) {
         transform: translateX(45%);
     }
     
-    svg text {
-        letter-spacing: 10px;
-        font-size: 5rem;
-    }
+    svg text {letter-spacing: 10px;}
 }
   
 
@@ -243,24 +229,10 @@ section:nth-of-type(5) {
     .face-image { /* So my face isn't that big */
         width: 30%;
     }
-
-    .section-style {
-        height: 850px;
-    }
-
-    svg text {
-        letter-spacing: 10px;
-        font-size: 6rem;
-        stroke-width: 2.5;
-    }
 }
 
 
 @media (min-width: 992px) {
-    .big-heading {
-        padding: 40vh 25px;
-    }
-
     .opening-sentence {
         text-align: left;
         font-size: 2.5rem;
@@ -302,10 +274,6 @@ section:nth-of-type(5) {
         border-radius: 50%;
         width: 40%;
       }
-
-    .section-style {
-        height: 110vh;
-    }
     
     .section-style .section-list {
         position: fixed;
@@ -318,8 +286,7 @@ section:nth-of-type(5) {
 
     svg text {
         letter-spacing: 12px;
-        font-size: 8em;
-        stroke-width: 4;
+        stroke-width: 8;
     }
 }
 
