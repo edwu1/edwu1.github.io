@@ -48,7 +48,7 @@ svg text {
     0% {
       stroke-dasharray: 0 50%;
       stroke-dashoffset:  20%;
-      fill: hsl(174, 69%, 68%)
+      fill: hsl(66, 90%, 74%)
     }
     100% {
       stroke-dasharray: 50% 0;
@@ -121,21 +121,20 @@ section:nth-of-type(5) {
     top: 10%;
 }
 
-@media (max-width: 400px) {
-    @media (max-height: 649px) {
-        #sectionOne .section-list, #sectionTwo .section-list {
-            transform: scale(60%);
-            top: -21%;
-        }
-    }
-
-    @media (min-height: 650px) and (max-height: 930px) {
-        #sectionOne .section-list, #sectionTwo .section-list {
-            transform: scale(70%);
-            top: -10%;
-        }
+@media (max-width: 450px) and (max-height: 649px) {
+    #sectionOne .section-list, #sectionTwo .section-list {
+        transform: scale(60%);
+        top: -21%;
     }
 }
+
+@media (max-width: 450px) and (min-height: 650px) and (max-height: 930px) {
+    #sectionOne .section-list, #sectionTwo .section-list {
+            transform: scale(70%);
+            top: -10%;
+    }
+}
+
 
 .row {
     padding-bottom: 45px;
@@ -355,7 +354,7 @@ a.nav-link {
 }
 
 .about-p {
-    animation: secFadeIn 4s forwards;
+    animation: secFadeIn 3s forwards;
     color: white;
     text-align: justify;
     margin: 2rem 15%;
