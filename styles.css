@@ -29,8 +29,7 @@ div.cases {
 
 /* Title Animation */
 .patterns {
-    height: 150vh;
-    max-height: 200vw;
+    height: 120vh;
     width: 100vw;
 }
 
@@ -38,9 +37,9 @@ svg text {
     font-family: 'Dosis', sans-serif;
     letter-spacing: 5px;
     stroke: #DBDF87;
-    font-size: 15vw;
+    font-size: 20vw;
     font-weight: 600;
-    stroke-width: 4;
+    stroke-width: 2.5;
     animation: textAnimate 5s infinite alternate;
     
 }
@@ -122,17 +121,24 @@ section:nth-of-type(5) {
     top: 10%;
 }
 
-@media (max-width: 465px) {
-    @media (max-height: 930px) {
+@media (max-width: 400px) {
+    @media (max-height: 649px) {
         #sectionOne .section-list, #sectionTwo .section-list {
-            transform: scale(50%);
-            top: -20%;
+            transform: scale(60%);
+            top: -21%;
+        }
+    }
+
+    @media (min-height: 650px) and (max-height: 930px) {
+        #sectionOne .section-list, #sectionTwo .section-list {
+            transform: scale(70%);
+            top: -10%;
         }
     }
 }
 
 .row {
-    padding-bottom: 50px;
+    padding-bottom: 45px;
 }
 
 .cases {
@@ -285,8 +291,9 @@ section:nth-of-type(5) {
     }
 
     svg text {
+        font-size: 7.5rem;
         letter-spacing: 12px;
-        stroke-width: 8;
+        stroke-width: 5;
     }
 }
 
