@@ -295,6 +295,10 @@ section:nth-of-type(5) {
         letter-spacing: 12px;
         stroke-width: 5;
     }
+
+    .intro-row {
+        padding-top: 10vh;
+    }
 }
 
 /* Navbar */
