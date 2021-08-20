@@ -45,8 +45,11 @@ div.cases {
 
 /* Title Animation */
 .patterns {
-    height: 120vh;
+    height: 120vw;
     width: 100vw;
+}
+@media (min-width: 992px) {
+    .patterns {max-height: 100vh; }
 }
 
 svg text {
@@ -206,6 +209,7 @@ section:nth-of-type(5) {
     background-color: #B7AC44;
     color: #FFF;
     position: absolute;
+    z-index: 5;
 }
 
 .footer-items {

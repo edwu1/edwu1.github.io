@@ -9,15 +9,7 @@ $(document).ready(function(){
     $("section:nth-of-type(3)").css("top", bottomOfSkillsHeading + 1.1 * $(window).height());
     $("section:nth-of-type(4)").css("top", bottomOfSkillsHeading  + 2 * 1.1 * $(window).height());
     $("section:nth-of-type(5)").css("top", bottomOfSkillsHeading  + 3 * 1.1 * $(window).height());
-    $("#footer").css("top", bottomOfSkillsHeading + 4 * 1.1 * $(window).height());
-
-    // console.log($(window).height());
-    // console.log($("section:nth-of-type(2) div.section-list").height());
-
-    // if ($(window).width() < 768) {
-
-    // }
-
+    $("#footer").css("top", bottomOfSkillsHeading + 4 * 1.1 * $(window).height() - 64);
 
 });
 
