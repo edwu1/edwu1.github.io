@@ -39,7 +39,7 @@ div.cases {
 
 /* Intro Section */
 .intro {
-    background-color: #FFA343;
+    background-color: #F4976C;
     color: #fff;
 }
 
@@ -55,7 +55,7 @@ div.cases {
 svg text {
     font-family: 'Dosis', sans-serif;
     letter-spacing: 5px;
-    stroke: #DBDF87;
+    stroke: #16FFBD;
     font-size: 20vw;
     font-weight: 600;
     stroke-width: 2.5;
@@ -67,7 +67,7 @@ svg text {
     0% {
       stroke-dasharray: 0 50%;
       stroke-dashoffset:  20%;
-      fill: hsl(66, 90%, 74%)
+      fill: #ECECEC;
     }
     100% {
       stroke-dasharray: 50% 0;
@@ -101,26 +101,26 @@ svg text {
 
 /* Sections of skills */
 section:nth-of-type(2) {
-    background-color: #FFCB32;
+    background-color: #F3D250;
     color: #000;
     z-index: 1;
 }
 
 section:nth-of-type(3) {
-    background-color: #F8FFCA;
+    background-color: #F78888;
     color: #000;
     z-index: 2;
 }
 
 section:nth-of-type(4) {
-    background-color: #FF5C4D;
-    color: #fff;
+    background-color: #90CCF4;
+    color: #000;
     z-index: 3;
 }
 
 section:nth-of-type(5) {
-    background-color: #B6D084;
-    color: #000000;
+    background-color: #AFD275;
+    color: #000;
     z-index: 4;
 }
 
@@ -182,8 +182,8 @@ section:nth-of-type(5) {
 
 /* Add-on classes with javascript */
 .style-black {
-    background-color: #FFCB32;
-    color: #F8FFCA;
+    background-color: #F3D250;
+    color: #fff;
 }
 
 .style-translation-one {
@@ -206,8 +206,8 @@ section:nth-of-type(5) {
 #footer {
     width: 100%;
     height: 4rem;
-    background-color: #B7AC44;
-    color: #FFF;
+    background-color: #ECECEC;
+    color: #000;
     position: absolute;
     z-index: 5;
 }
@@ -303,11 +303,11 @@ section:nth-of-type(5) {
 
 /* Navbar */
 ul .nav-link.active {
-    border-bottom: 3px solid #C7FAC7;
+    border-bottom: 3px solid #F78888;
 }
 
 ul .nav-link:hover {
-    border-bottom: 3px solid #C7FAC7;
+    border-bottom: 3px solid #F78888;
     opacity: 50%;
 }
 
