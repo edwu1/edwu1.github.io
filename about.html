@@ -12,11 +12,6 @@
 
         <style>
             body {background-color: black;}
-            @media (min-height: 800px) {
-                #footer {
-                    top: 100vh;
-                }
-            }
         </style>
     </head>
 
@@ -74,6 +69,10 @@
             I plan on developing my capabilities to a pioneering extent. 
         </p>
         
+        <!-- Javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </body>
 
@@ -86,4 +85,11 @@
           <p>©2021 Edmund Wu</p>
         </div>
     </footer>
+
+    <script>
+        if ($("#footer").offset().top < $(window).height()) {
+            $("#footer").css("top", $(window).height());
+        }
+    </script>
+
 </html>
